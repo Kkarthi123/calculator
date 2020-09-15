@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="input-sr ">
+                <h6 class="py-3 text-right pr-2 in"></h6>
+            </div>
+            <div class="answer-sr">
+                <h6 class="pb-2 text-right pr-2 out"></h6>
+            </div>
+            <table class="buttons">
+                <tr>
+                    <td><button class="btn m-1 operator" onclick="op('+')">+</button></td>
+                    <td><button class="btn m-1  operator" onclick="op('-')">-</button></td>
+                    <td><button onclick="op('x')"class="btn m-1 operator">x</button></td>
+                    <td><button onclick="op('/')"class="btn m-1  operator">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="input(7)"class="btn m-1 seven num">7</button></td>
+                    <td><button onclick="input(8)"class="btn m-1 eight num">8</button></td>
+                    <td><button onclick="input(9)"class="btn m-1 nine num">9</button></td>
+                    <td><button onclick="Clear(0)"class="btn m-1 clear">c</button></td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="input(4)"class="btn m-1 four num">4</button></td>
+                    <td><button onclick="input(5)"class="btn m-1 five num">5</button></td>
+                    <td><button onclick="input(6)"class="btn m-1 six num">6</button></td>
+                    <td rowspan="3" ><button onclick="equal()"class="btn m-1 equal">=</button></td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="input(1)"class="btn m-1 one num">1</button></td>
+                    <td><button onclick="input(2)"class="btn m-1 two num">2</button></td>
+                    <td><button onclick="input(3)"class="btn m-1 three num">3</button></td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="Call(0)"class="btn m-1 Call p-1">CE</button></td>
+                    <td><button onclick="input(0)"class="btn m-1 zero num">0</button></td>
+                    <td><button onclick="input('.')"class="btn m-1 dot">.</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div> 
+    
+   
+
+
+
+
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
